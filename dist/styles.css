@@ -168,7 +168,7 @@ svg {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 1.5rem;
-    padding-block: 1rem;
+    padding-block: 2rem;
   }
 
   .intro__review> :nth-last-child(3) {
@@ -250,16 +250,17 @@ svg {
 
 @media (min-width: 900px) {
   .card {
-    margin-block: 16px;
+    row-gap: 1.5rem;
+    margin-block: 1rem;
   }
 
   .card:first-child {
     margin-top: auto;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 
   .card:last-child {
-    margin-top: 32px;
+    margin-top: 2rem;
     margin-bottom: auto;
   }
 }

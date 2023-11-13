@@ -36,15 +36,16 @@
   }
 
   @include mq(min, md) {
-    margin-block: 16px;
+    row-gap: $ss-6;
+    margin-block: $ss-4;
 
     &:first-child {
       margin-top: auto;
-      margin-bottom: 32px;
+      margin-bottom: $ss-8;
     }
 
     &:last-child {
-      margin-top: 32px;
+      margin-top: $ss-8;
       margin-bottom: auto;
     }
   }

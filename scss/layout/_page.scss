@@ -102,7 +102,7 @@
 
     &__review {
       @include grid($rows: repeat(3, 1fr), $gap: $ss-6);
-      padding-block: $ss-4;
+      padding-block: $ss-8;
 
       &> :nth-last-child(3) {
         margin-right: auto;
