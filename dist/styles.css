@@ -1,0 +1,264 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+/*--START RESET--------------------*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  border: 0 solid transparent;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*--END RESET--------------------*/
+/*--START LAYOUT--------------------*/
+.page {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 50px;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+  height: 100vh;
+  margin: auto;
+  padding-top: 4.5rem;
+  padding-inline: 1.5rem;
+  background: url("/images/bg-pattern-top-mobile.svg") top left no-repeat,
+    url("/images/bg-pattern-bottom-mobile.svg") bottom right no-repeat;
+  background-size: 50% 50%, 50% 50%;
+}
+
+.page__main {
+  display: grid;
+  gap: 3rem;
+}
+
+.page__main-socials {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .page {
+    max-width: 1140px;
+    padding-inline: 1.25rem;
+    background: url("/images/bg-pattern-top-desktop.svg") top left no-repeat,
+      url("/images/bg-pattern-bottom-desktop.svg") bottom right no-repeat;
+  }
+
+  .page__main-socials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+  }
+}
+
+/*--END LAYOUT--------------------*/
+/*--START SECTION INTRO-----------*/
+.intro {
+  display: grid;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.intro__header {
+  display: grid;
+  gap: 1rem;
+}
+
+.intro__title {
+  font-size: 2.375rem;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+
+.intro__text {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: hsl(303, 10%, 53%);
+}
+
+.intro__review {
+  display: grid;
+  gap: 1rem;
+}
+
+.intro__rated {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 0.5rem;
+}
+
+.intro__stars {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.intro__rate {
+  color: hsl(300, 43%, 22%);
+}
+
+@media (min-width: 900px) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5rem;
+  }
+
+  .intro__header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    text-align: start;
+  }
+
+  .intro__title {
+    grid-column: span 4;
+    font-size: 3.25rem;
+  }
+
+  .intro__text {
+    grid-column: span 4;
+    grid-row: 2;
+  }
+
+  .intro__review {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding-block: 1rem;
+  }
+
+  .intro__review> :nth-last-child(3) {
+    margin-right: auto;
+  }
+
+  .intro__review> :nth-last-child(2) {
+    margin-inline: auto;
+  }
+
+  .intro__review> :nth-last-child(1) {
+    margin-left: auto;
+  }
+
+  .intro__rated {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  .intro__stars {
+    margin-right: auto;
+  }
+}
+
+/*--END SECTION INTRO-----------*/
+/*--START FOOTER-----------*/
+.footer__attribution {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: hsl(300, 43%, 22%);
+  text-align: center;
+}
+
+.footer__link {
+  color: hsl(303, 10%, 53%);
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: hsl(333, 80%, 67%);
+}
+
+/*--END FOOTER--------------------*/
+/*--START CARD--------------------*/
+.card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 2rem;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card__check {
+  font-weight: 500;
+  color: hsl(333, 80%, 67%);
+}
+
+.card__image {
+  width: 44px;
+  border-radius: 50%;
+}
+
+.card__name {
+  color: hsl(300, 24%, 96%);
+}
+
+.card__text {
+  grid-column: span 2;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(300, 24%, 96%);
+}
+
+@media (min-width: 900px) {
+  .card {
+    margin-block: 16px;
+  }
+
+  .card:first-child {
+    margin-top: auto;
+    margin-bottom: 32px;
+  }
+
+  .card:last-child {
+    margin-top: 32px;
+    margin-bottom: auto;
+  }
+}
+
+/*--END CARD--------------------*/
+/*# sourceMappingURL=e:/Designer/FrontendMentor/social-proof-section-master/dist/styles.css.map */

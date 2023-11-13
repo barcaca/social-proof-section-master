@@ -1,0 +1,53 @@
+// ========================== //
+//           CARD             //
+// ========================== //
+
+@use "../base" as *;
+@use "sass:map";
+
+//--CARD----//
+/*--START CARD--------------------*/
+.card {
+  @include grid(auto 1fr, $gap: $ss-2);
+  align-items: center;
+  padding: $ss-8;
+  background-color: $theme-primary-100;
+  border-radius: $ss-2;
+  box-shadow: $shadow-diffuse;
+
+  &__check {
+    font-weight: $fw-500;
+    color: $theme-primary-200;
+  }
+
+  &__image {
+    width: 44px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    color: $theme-neutral-200;
+  }
+
+  &__text {
+    grid-column: span 2;
+    color: $theme-neutral-200;
+    @include font-style(base, null, base);
+  }
+
+  @include mq(min, md) {
+    margin-block: 16px;
+
+    &:first-child {
+      margin-top: auto;
+      margin-bottom: 32px;
+    }
+
+    &:last-child {
+      margin-top: 32px;
+      margin-bottom: auto;
+    }
+  }
+}
+
+/*--END CARD--------------------*/
