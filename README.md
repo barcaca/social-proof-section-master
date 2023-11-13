@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Results Summary Component/Frontier Mentor](https://www.frontendmentor.io/solutions/four-card-feature-section-master-sassscss-TEsHDnqBkP)
-- Live Site URL: [Vercel App](https://four-card-feature-section-master-olive-five.vercel.app)
+- Solution URL: [Social Proof Section/Frontier Mentor](https://www.frontendmentor.io/solutions/social-proof-section-sassscss-r_wYyn3taT)
+- Live Site URL: [Vercel App](https://social-proof-section-master-livid-kappa.vercel.app)
 
 ## My process
 
