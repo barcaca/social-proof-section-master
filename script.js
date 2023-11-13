@@ -1,6 +1,5 @@
-// Constants for star image source and alt text
+// Constants for star image source
 const STAR_IMAGE_SRC = "images/icon-star.svg";
-const STAR_ALT_TEXT = "star";
 
 /**
  * Adds stars to the specified containers.
@@ -19,9 +18,8 @@ function addStarsToContainers(containerClass, numberOfStars) {
       // Create a new image element for the star
       const starImg = document.createElement("img");
 
-      // Set the star image source and alt text
+      // Set the star image source
       starImg.src = STAR_IMAGE_SRC;
-      starImg.alt = STAR_ALT_TEXT;
 
       // Append the star image to the container
       container.appendChild(starImg);
