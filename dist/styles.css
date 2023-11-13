@@ -77,6 +77,10 @@ svg {
       url("/images/bg-pattern-bottom-desktop.svg") bottom right no-repeat;
   }
 
+  .page__main {
+    gap: 0;
+  }
+
   .page__main-socials {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

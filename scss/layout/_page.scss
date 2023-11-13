@@ -31,6 +31,8 @@
     @include container(xl, $ss-5);
 
     &__main {
+      gap: 0;
+
       &-socials {
         @include grid(repeat(3, 1fr));
         padding: $ss-4;
